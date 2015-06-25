@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html, body{
+  font-size: 20px;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  text-align: center;
+  background-color: #fafafa;
+}
+input[type="number"]{
+  width: 5rem;
+}
+textarea {
+  max-width: 100%;
+  width: 90%;
+  margin: 1rem auto;
+  box-sizing: border-box;
+}
+span.left, span.middle, span.right{
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc(90% / 3);
+}
+span.left{
+  color: rgba(50, 50, 200, 0.7);
+}
+span.middle{
+  color: rgba(50, 200, 50, 0.7);
+}
+span.right{
+  color: rgba(200, 50, 50, 0.7);
+}
+#flex-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.box {
+  width: 10%;
+  border: 1px solid #333;
+  background-color: rgba(220, 220, 220, 0.7);
+  box-sizing: border-box;
+  transition: opacity 2.4s ease;
+  opacity: 1;
+}
+.box:hover {
+  background-color: rgba(220, 220, 220, 0.4);
+}
+.start {
+  background-color: rgba(50, 50, 200, 0.7);
+}
+.start:hover {
+  background-color: rgba(50, 50, 200, 0.4);
+}
+.mid {
+  background-color: rgba(50, 200, 50, 0.7);
+  transition: transform 2.4s ease;
+}
+.mid:hover {
+  background-color: rgba(50, 200, 50, 0.4);
+}
+.end {
+  background-color: rgba(200, 50, 50, 0.7);
+}
+.end:hover {
+  background-color: rgba(200, 50, 50, 0.4);
+}
+
+.fadeOut{
+  box-sizing: border-box;
+  width: 10%;
+  opacity: 0.1;
+}
+
+/* footer */
+footer {
+  background-color: #eee;
+  border-top: 1px solid rgba(100,100,100,0.5);
+  padding: 0.5rem 0;
+}
+footer a {
+  display: inline-block;
+  width: calc(90%/2);
+}
